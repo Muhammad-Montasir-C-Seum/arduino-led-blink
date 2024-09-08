@@ -1,0 +1,17 @@
+//c++ code
+//motorcontrol
+int p=11 , n=10 ;
+void setup()
+{
+ pinMode(p,OUTPUT);
+ pinMode(n,OUTPUT);
+}
+void loop()
+{
+analogWrite(p,200);
+analogWrite(n,0);
+delay(2500);
+analogWrite(p,0);
+analogWrite(n,200);
+delay(2500)
+}
